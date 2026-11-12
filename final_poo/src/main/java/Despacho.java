@@ -17,8 +17,6 @@ public class Despacho <T extends Paquete> {
         if (paquetes.contains(Paquete)) {
             throw new IllegalArgumentException("Ya existe un recurso con ese codigo");
         }
-        //El contains verifica por medio del metodo equals personalizado que yo haya definido para compararlos y ver
-        // si ya el recurso a agregar lo contiene la lista
 
         paquetes.add(Paquete);
     }
